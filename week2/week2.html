@@ -66,7 +66,7 @@
            // add the sphere to the scene
            scene.add(sphere);
 
-           var texture = new THREE.ImageUtils.loadTexture("earth.jpg");
+           var texture = new THREE.ImageUtils.loadTexture("./earth.jpg");
            sphereMaterial.map = texture;
 
            // 添加一个转轴
@@ -90,7 +90,7 @@
            //注意这里转动的小球要添加在转轴里
            pivotPoint.add(spheresml);
 
-           var texturesml = new THREE.ImageUtils.loadTexture("moon.jpg");
+           var texturesml = new THREE.ImageUtils.loadTexture("./moon.jpg");
            sphereMaterialsml.map = texturesml;
 
            //星星
