@@ -36,7 +36,7 @@
         scene = new THREE.Scene();
 
         // create a camera, which defines where we're looking at.
-        // 四个参数分别代表了摄像机的视角、宽高比、近和远两个视截面。
+       
         camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1000);
         camControl = new THREE.TrackballControls(camera);
         // position and point the camera to the center of the scene
@@ -69,7 +69,7 @@
         var texture = new THREE.ImageUtils.loadTexture("http://10.1.26.29:84/earth.jpg");
         sphereMaterial.map = texture;
 
-        // 添加一个转轴
+        
         pivotPoint = new THREE.Object3D();
         pivotPoint.rotation.x = 0.4;
         sphere.add(pivotPoint);
@@ -87,7 +87,7 @@
         spheresml.name = 'spheresml';
         spheresml.castShadow = true;
 
-        //注意这里转动的小球要添加在转轴里
+        
         pivotPoint.add(spheresml);
 
         var texturesml = new THREE.ImageUtils.loadTexture("http://10.1.26.29:84/moon.jpg");
